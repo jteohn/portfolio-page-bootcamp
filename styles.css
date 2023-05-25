@@ -1,3 +1,76 @@
-body {
-  background-color: white;
+/* resume style - clean, white, black, grey, bit of beige. */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* ======== SPLIT INTO 3 COLUMNS ======== */
+.main-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* ========= LEFT COLUMN / SELF INTRO ========= */
+.left-bar {
+  display: inline-block;
+  background-color: #dbdbdb;
+  width: 20%;
+  height: 80vh;
+  padding: 25px;
+  border-radius: 30px;
+  /* margin-left: 30px; */
+}
+
+.my-name {
+  background-color: #dbdbdb;
+  font-size: 30px;
+  margin-top: 10vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-me {
+  background-color: #dbdbdb;
+  text-align: center;
+}
+
+.left-bottom-bar {
+  margin-top: 10vw;
+}
+
+/* ========= MIDDLE COLUMN / MAIN ========= */
+.middle-bar {
+  box-sizing: border-box;
+  width: 60vw;
+  /* margin-top: 10vw; */
+}
+
+/* ========= RIGHT COLUMN / NAV BAR ========= */
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px;
+  list-style: none;
+}
+
+.nav-bar li {
+  display: flex;
+  align-items: center;
+  width: 10vw;
+  height: 10vh;
+  /* padding: 40px 15px 15px 15px; */
+}
+
+.nav-bar li a {
+  color: #6d6d6d;
+  font-weight: bold;
+}
+
+.nav-bar li a:hover {
+  color: #92b4ca;
 }

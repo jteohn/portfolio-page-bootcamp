@@ -79,3 +79,33 @@
 .nav-bar li a:hover {
   color: #70a3c5;
 }
+
+.nav-bar li a.active {
+  background-color: transparent;
+  border-bottom: 3px solid #8aaec7;
+  padding-bottom: 6px;
+  content: "";
+  display: block;
+  position: relative;
+  width: 49px;
+}
+
+.about-active {
+  background-color: transparent;
+  border-bottom: 3px solid #8aaec7;
+  padding-bottom: 6px;
+  content: "";
+  display: block;
+  position: relative;
+  width: 54px;
+}
+
+.portfolio-active {
+  background-color: transparent;
+  border-bottom: 3px solid #8aaec7;
+  padding-bottom: 6px;
+  content: "";
+  display: block;
+  position: relative;
+  width: 85px;
+}

@@ -40,31 +40,56 @@
   height: auto;
 }
 
+#main-dp {
+  position: relative;
+  align-items: center;
+  width: 20vw;
+  height: auto;
+  margin-top: 1vw;
+}
+
 .my-name {
   background-color: #dbdbdb;
   color: #333333;
   /* font-family: Didot, Maiah, serif; */
   font-family: "Bungee Shade";
   font-size: 2.3vw;
-  margin-top: 10vw;
+  margin-top: 1.3vw;
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.5vw;
   text-overflow: initial;
 }
 
-.about-me {
-  background-color: #dbdbdb;
+.my-name-text {
   color: #333333;
-  /* font-family: Maiah, Didot, serif; */
   font-family: "Arapey";
   text-align: center;
   font-size: 1.2vw;
   text-overflow: initial;
 }
 
+.connect-title {
+  color: #6d6d6d;
+  font-family: "Bungee Shade";
+  text-align: center;
+  font-size: 1.2vw;
+  /* text-overflow: initial; */
+}
+
 .left-bottom-bar {
-  margin-top: 10vw;
+  margin-top: 5vw;
+}
+
+/* SIDE ICONS */
+.icons-sidebar {
+  display: block;
+  text-align: center;
+}
+
+.icons {
+  display: relative;
+  width: 10%;
 }
 
 /* ========= MIDDLE COLUMN / MAIN ========= */
@@ -73,7 +98,98 @@
   width: 60vw;
   /* margin-top: 10vw; */
 }
+/* !!! 1. HOME PAGE !!! */
+.homepage-header {
+  display: inline-block;
+  font-family: "Bungee Shade";
+  font-size: 4vw;
+  color: #6d6d6d;
+  margin-top: 18%;
+  margin-bottom: 5%;
+  margin-left: 23%;
+}
 
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  /* white-space: nowrap; */
+  width: 0;
+  animation: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* !!! 2. ABOUT PAGE !!! */
+.about-maintitle {
+  font-size: 4vw;
+  font-family: "Bungee Shade";
+  color: #6d6d6d;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 3vw;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  height: 20vh;
+  margin-left: 3vw;
+  margin-top: 3vw;
+}
+
+.about-leftside {
+  display: inline-block;
+  background-color: rgb(170, 198, 218, 0.3);
+  font-family: "Arapey";
+  text-align: center;
+  width: 20vw;
+  border-radius: 5vw;
+  list-style-position: inside;
+  box-shadow: 0 0 2rem 0 #5b94bc71;
+  overflow: hidden;
+}
+
+.about-rightside {
+  display: inline-block;
+  background-color: rgb(249, 228, 200, 0.6);
+  font-family: "Arapey";
+  text-align: center;
+  width: 20vw;
+  border-radius: 5vw;
+  list-style-position: inside;
+  box-shadow: 0 0 2rem 0 #f4bc738f;
+  overflow: hidden;
+}
+
+#about-text {
+  text-align: center;
+  color: #6d6d6d;
+  font-size: 1.5vw;
+  font-family: "Arapey";
+}
+
+#about-subtitle {
+  padding-top: 2vw;
+  text-align: center;
+  color: #6d6d6d;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-bottom: 0.3vw;
+}
+
+/* !!! 3. PORTFOLIO PAGE !!! */
 .portfolio-maintitle {
   font-size: 4vw;
   /* font-family: Maiah; */
@@ -90,7 +206,6 @@
   width: 25vw;
   height: 30vh;
 }
-/* add some shadow to the images? add some vintage hue*/
 
 .picture-container {
   display: flex;
@@ -106,7 +221,7 @@
   background-image: white;
   padding: 1vw;
   box-shadow: 0 0.2rem 1.2rem #a9a9a9;
-  margin: 10vh 2vw;
+  margin: 2vw;
 }
 
 figcaption {

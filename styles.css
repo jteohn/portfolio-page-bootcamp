@@ -153,6 +153,7 @@
   font-family: "Arapey";
   text-align: center;
   width: 25vw;
+  height: 25vh;
   border-radius: 5vw;
   list-style-position: inside;
   box-shadow: 0 0 2rem 0 #5b94bc71;
@@ -165,6 +166,7 @@
   font-family: "Arapey";
   text-align: center;
   width: 25vw;
+  height: 25vh;
   border-radius: 5vw;
   list-style-position: inside;
   box-shadow: 0 0 2rem 0 #f4bc738f;
